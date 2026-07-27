@@ -8,7 +8,10 @@ void printvec(vector<string> names ){
     }
     cout<<endl;
 }
-void inputvec(int n,vector<string> &names){
+void inputvec(vector<string> &names){
+    cout<<"enter the size of vector"<<endl;
+    int n;
+    cin>>n;
     for(int i=0 ;i<n;i++){
         string x;
         cin>>x;
@@ -20,14 +23,14 @@ void inputvec(int n,vector<string> &names){
 int main(){
     vector<string> names;
     // vector<pair<int,int>> vecpair;
-    cout<<"enter the number of student"<<endl;
-    int n;
-    cin>>n;
+    
+    //int n;
+    //cin>>n;
     // for(int i=0;i<n;i++){
     //     string x ;
     //     cin>>x;
     //     names.push_back(x);
-    inputvec(n,names);
+    inputvec(names);
     printvec(names);
     // }
 }
